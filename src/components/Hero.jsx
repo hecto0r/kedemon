@@ -85,7 +85,7 @@ export default function Hero() {
               transition={{ type: 'spring', stiffness: 260, damping: 20, delay: headlineDuration + 0.15 }}
               className="shimmer-sweep relative overflow-hidden rounded-full bg-navy px-7 py-3.5 text-center text-[0.95rem] font-semibold text-white shadow-[0_8px_24px_rgba(13,42,92,0.3)] transition-transform duration-200 active:scale-[0.98]"
             >
-              Solicitar piloto gratuito
+              Unirme al Plan Fundadores
             </motion.a>
             <motion.a
               href="#como-funciona"

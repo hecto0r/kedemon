@@ -76,7 +76,7 @@ export default function Navbar() {
           data-cursor-hover
           className="shimmer-sweep relative z-10 hidden overflow-hidden rounded-full bg-navy px-5 py-2.5 text-[0.9rem] font-semibold text-white shadow-[0_4px_16px_rgba(13,42,92,0.25)] transition-transform duration-200 active:scale-[0.98] md:inline-block"
         >
-          Solicitar piloto
+          Plan Fundadores
         </a>
 
         <button
@@ -114,7 +114,7 @@ export default function Navbar() {
                 onClick={(e) => handleNavClick(e, '#contacto')}
                 className="mt-2 rounded-full bg-navy px-5 py-3 text-center text-base font-semibold text-white active:scale-[0.98]"
               >
-                Solicitar piloto
+                Plan Fundadores
               </a>
             </div>
           </motion.nav>

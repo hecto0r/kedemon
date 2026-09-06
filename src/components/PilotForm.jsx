@@ -74,7 +74,7 @@ export default function PilotForm() {
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           access_key: WEB3FORMS_KEY,
-          subject: 'Nueva solicitud de piloto · KEDEMON',
+          subject: 'Nueva solicitud — Plan Fundadores · KEDEMON',
           from_name: 'Web KEDEMON',
           ...values,
           consentimiento_rgpd: 'Sí, aceptó la política de privacidad antes de enviar',
@@ -105,13 +105,13 @@ export default function PilotForm() {
       <div className="mx-auto max-w-3xl px-6 lg:px-10">
         <Reveal className="text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-blue">
-            Piloto gratuito
+            Plan Fundadores
           </span>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
-            ¿Tu residencia quiere ser la primera?
+            ¿Tu residencia quiere ser una de las fundadoras?
           </h2>
           <p className="mt-4 text-lg text-navy/70">
-            4 semanas. 1 habitación. 0€. Sin compromiso.
+            Grupo reducido. Condiciones especiales para las primeras residencias. Sin compromiso.
           </p>
         </Reveal>
 
@@ -158,8 +158,8 @@ export default function PilotForm() {
                 className="mt-2 max-w-sm text-navy/70"
               >
                 Hemos recibido tu solicitud. Nuestro equipo se pondrá en
-                contacto contigo en menos de 48 horas para organizar el
-                piloto.
+                contacto contigo en menos de 48 horas para hablar del
+                Plan Fundadores.
               </motion.p>
             </motion.div>
           ) : (
@@ -240,7 +240,7 @@ export default function PilotForm() {
                 ) : status === 'error' ? (
                   'Reintentar envío'
                 ) : (
-                  'Solicitar piloto gratuito'
+                  'Solicitar mi plaza'
                 )}
               </motion.button>
 
