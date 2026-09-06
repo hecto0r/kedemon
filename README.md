@@ -1,7 +1,7 @@
-# KEDEMON — landing page
+# KEDEMON HEALTH — landing page
 
-Landing page de KEDEMON: detección de caídas por IA para residencias de
-ancianos, en tiempo real y sin cámaras que graben.
+Landing page de KEDEMON HEALTH: detección de caídas por IA para residencias
+de ancianos, en tiempo real y sin cámaras que graben.
 
 **En producción:** https://hecto0r.github.io/kedemon/
 

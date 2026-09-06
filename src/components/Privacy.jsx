@@ -56,7 +56,7 @@ export default function Privacy() {
             El paciente está protegido, no vigilado.
           </h2>
           <p className="mt-5 max-w-lg text-[1.05rem] leading-relaxed text-white/65">
-            KEDEMON está diseñado desde el principio bajo el principio de
+            KEDEMON HEALTH está diseñado desde el principio bajo el principio de
             privacidad por defecto. Nuestro sistema analiza patrones de
             movimiento con IA en el propio dispositivo: nunca genera,
             transmite ni almacena vídeo. Cumplimos íntegramente el RGPD y las

@@ -71,7 +71,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: headlineDuration, ease: [0.16, 1, 0.3, 1] }}
             className="mt-6 max-w-xl text-lg leading-relaxed text-navy/70"
           >
-            KEDEMON detecta caídas en residencias de ancianos en tiempo real
+            KEDEMON HEALTH detecta caídas en residencias de ancianos en tiempo real
             mediante IA, y avisa al auxiliar en segundos. Sin cámaras que
             graben. Sin sensores invasivos.
           </m.p>

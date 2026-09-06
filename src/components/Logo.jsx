@@ -13,7 +13,7 @@ export default function Logo({ className = '', markClassName = '', light = false
           light ? 'text-white' : 'text-navy'
         }`}
       >
-        KEDEMON
+        KEDEMON <span className={light ? 'text-accent' : 'text-blue'}>HEALTH</span>
       </span>
     </div>
   )

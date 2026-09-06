@@ -74,8 +74,8 @@ export default function PilotForm() {
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           access_key: WEB3FORMS_KEY,
-          subject: 'Nueva solicitud — Plan Fundadores · KEDEMON',
-          from_name: 'Web KEDEMON',
+          subject: 'Nueva solicitud — Plan Fundadores · KEDEMON HEALTH',
+          from_name: 'Web KEDEMON HEALTH',
           ...values,
           consentimiento_rgpd: 'Sí, aceptó la política de privacidad antes de enviar',
         }),

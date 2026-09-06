@@ -11,7 +11,7 @@ export default function Footer() {
         </p>
         <div className="mt-4 h-px w-full max-w-xs bg-white/10" />
         <p className="text-sm text-white/60">
-          © {new Date().getFullYear()} KEDEMON. Todos los derechos reservados.
+          © {new Date().getFullYear()} KEDEMON HEALTH. Todos los derechos reservados.
         </p>
         <p className="text-sm font-medium text-white/60">
           Héctor Velasco · 619 539 992
