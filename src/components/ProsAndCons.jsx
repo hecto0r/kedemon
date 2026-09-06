@@ -8,7 +8,6 @@ const PROS = [
   'Instalación completa en menos de una semana, sin obras',
   'Precio transparente desde la primera llamada — sin procesos de propuesta comercial de semanas',
   'Convive con los sistemas de llamada de enfermería que ya tenga el centro',
-  'Las alertas llegan directamente al móvil del personal, sin apps que instalar',
 ]
 
 const CONS = [
