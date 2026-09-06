@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 import RadarViz from './RadarViz'
 import LogoMark from './LogoMark'
@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="gradient-mesh pointer-events-none absolute inset-0" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg" />
 
-      <motion.div
+      <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.4, delay: 0.2 }}
@@ -33,11 +33,11 @@ export default function Hero() {
         className="pointer-events-none absolute left-0 top-1/2 h-[70vh] -translate-x-1/2 -translate-y-1/2 text-navy/[0.06] sm:h-[85vh] lg:h-[95vh]"
       >
         <LogoMark className="h-full w-auto" />
-      </motion.div>
+      </m.div>
 
       <div className="relative mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-8 lg:px-10">
         <div>
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -48,11 +48,11 @@ export default function Hero() {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
             </span>
             Sistema activo · Alerta en &lt; 3 segundos
-          </motion.div>
+          </m.div>
 
           <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight text-navy sm:text-5xl lg:text-6xl">
             {HEADLINE.map((word, i) => (
-              <motion.span
+              <m.span
                 key={i}
                 custom={i}
                 variants={wordVariants}
@@ -61,11 +61,11 @@ export default function Hero() {
                 className="mr-3 inline-block"
               >
                 {word}
-              </motion.span>
+              </m.span>
             ))}
           </h1>
 
-          <motion.p
+          <m.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: headlineDuration, ease: [0.16, 1, 0.3, 1] }}
@@ -74,10 +74,10 @@ export default function Hero() {
             KEDEMON detecta caídas en residencias de ancianos en tiempo real
             mediante IA, y avisa al auxiliar en segundos. Sin cámaras que
             graben. Sin sensores invasivos.
-          </motion.p>
+          </m.p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <motion.a
+            <m.a
               href="#contacto"
               data-cursor-hover
               initial={{ opacity: 0, y: 30 }}
@@ -86,8 +86,8 @@ export default function Hero() {
               className="shimmer-sweep relative overflow-hidden rounded-full bg-navy px-7 py-3.5 text-center text-[0.95rem] font-semibold text-white shadow-[0_8px_24px_rgba(13,42,92,0.3)] transition-transform duration-200 active:scale-[0.98]"
             >
               Unirme al Plan Fundadores
-            </motion.a>
-            <motion.a
+            </m.a>
+            <m.a
               href="#como-funciona"
               data-cursor-hover
               initial={{ opacity: 0, y: 30 }}
@@ -96,21 +96,21 @@ export default function Hero() {
               className="rounded-full border border-navy/20 bg-white/60 px-7 py-3.5 text-center text-[0.95rem] font-semibold text-navy backdrop-blur transition-all duration-200 hover:border-navy/40 hover:bg-white active:scale-[0.98]"
             >
               Cómo funciona
-            </motion.a>
+            </m.a>
           </div>
         </div>
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="flex justify-center lg:justify-end"
         >
           <RadarViz />
-        </motion.div>
+        </m.div>
       </div>
 
-      <motion.div
+      <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.6, duration: 0.8 }}
@@ -119,7 +119,7 @@ export default function Hero() {
       >
         <span className="text-xs font-medium uppercase tracking-widest">Desliza</span>
         <ChevronDown className="animate-bounce-slow" size={20} />
-      </motion.div>
+      </m.div>
     </section>
   )
 }

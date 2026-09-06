@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { useInView } from '../hooks/useInView'
 
 export default function Reveal({
@@ -10,7 +10,7 @@ export default function Reveal({
   as = 'div',
 }) {
   const [ref, inView] = useInView()
-  const Component = motion[as] ?? motion.div
+  const Component = m[as] ?? m.div
 
   return (
     <Component

@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { Loader2 } from 'lucide-react'
 import Reveal from './Reveal'
 import LogoMark from './LogoMark'
@@ -121,7 +121,7 @@ export default function PilotForm() {
           </div>
 
           {status === 'merging' && (
-            <motion.div
+            <m.div
               initial={{ opacity: 0, scale: 0.3 }}
               animate={{ opacity: 0.6, scale: 1 }}
               transition={{ duration: 0.7, ease: 'easeOut' }}
@@ -130,28 +130,28 @@ export default function PilotForm() {
           )}
 
           {status === 'done' ? (
-            <motion.div
+            <m.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="flex flex-col items-center rounded-2xl border border-soft bg-white px-8 py-16 text-center shadow-sm"
             >
-              <motion.div
+              <m.div
                 initial={{ scale: 0, rotate: -35, opacity: 0 }}
                 animate={{ scale: 1, rotate: 0, opacity: 1 }}
                 transition={{ type: 'spring', stiffness: 260, damping: 16 }}
                 className="flex h-20 w-20 items-center justify-center rounded-full bg-navy shadow-[0_10px_30px_rgba(13,42,92,0.3)]"
               >
                 <LogoMark className="h-10 w-10 text-white" />
-              </motion.div>
-              <motion.h3
+              </m.div>
+              <m.h3
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.35, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className="mt-6 text-2xl font-extrabold text-navy"
               >
                 ¡Muchas gracias!
-              </motion.h3>
-              <motion.p
+              </m.h3>
+              <m.p
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
@@ -160,8 +160,8 @@ export default function PilotForm() {
                 Hemos recibido tu solicitud. Nuestro equipo se pondrá en
                 contacto contigo en menos de 48 horas para hablar del
                 Plan Fundadores.
-              </motion.p>
-            </motion.div>
+              </m.p>
+            </m.div>
           ) : (
             <form
               ref={gridRef}
@@ -169,7 +169,7 @@ export default function PilotForm() {
               className="grid grid-cols-1 gap-5 rounded-2xl border border-soft bg-white p-8 shadow-sm sm:grid-cols-2 sm:p-10"
             >
               {FIELDS.map((field, i) => (
-                <motion.div
+                <m.div
                   key={field.name}
                   ref={(el) => (fieldRefs.current[i] = el)}
                   animate={fieldAnimate(i)}
@@ -189,10 +189,10 @@ export default function PilotForm() {
                     onChange={handleChange(field.name)}
                     className="rounded-xl border border-soft bg-bg px-4 py-3 text-navy outline-none transition-all duration-200 placeholder:text-navy/30 focus:border-accent focus:bg-white focus:shadow-[0_0_0_4px_rgba(74,158,255,0.15)] disabled:opacity-60"
                   />
-                </motion.div>
+                </m.div>
               ))}
 
-              <motion.label
+              <m.label
                 ref={(el) => (fieldRefs.current[CONSENT_INDEX] = el)}
                 animate={fieldAnimate(CONSENT_INDEX)}
                 transition={{ duration: 0.6, delay: CONSENT_INDEX * 0.05, ease: [0.65, 0, 0.35, 1] }}
@@ -221,9 +221,9 @@ export default function PilotForm() {
                   </a>{' '}
                   para el tratamiento de mis datos.
                 </span>
-              </motion.label>
+              </m.label>
 
-              <motion.button
+              <m.button
                 ref={(el) => (fieldRefs.current[BUTTON_INDEX] = el)}
                 type="submit"
                 data-cursor-hover
@@ -242,7 +242,7 @@ export default function PilotForm() {
                 ) : (
                   'Solicitar mi plaza'
                 )}
-              </motion.button>
+              </m.button>
 
               {status === 'error' && (
                 <p role="alert" className="col-span-full text-sm font-medium text-red-600">

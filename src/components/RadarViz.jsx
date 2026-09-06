@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import LogoMark from './LogoMark'
 
 const RINGS = [0, 0.6, 1.2, 1.8]
@@ -38,7 +38,7 @@ export default function RadarViz() {
         />
       ))}
 
-      <motion.div
+      <m.div
         initial={{ scale: 0.6, opacity: 0 }}
         animate={{
           scale: [1, 1.04, 1],
@@ -52,14 +52,14 @@ export default function RadarViz() {
       >
         <span className="absolute inset-2 rounded-full bg-accent/25 blur-md" />
         <LogoMark className="relative h-11 w-11 text-white drop-shadow-[0_0_6px_rgba(74,158,255,0.6)]" />
-      </motion.div>
+      </m.div>
 
       {[
         { top: '12%', left: '18%', delay: 0 },
         { top: '68%', left: '76%', delay: 0.6 },
         { top: '78%', left: '20%', delay: 1.1 },
       ].map((dot, i) => (
-        <motion.span
+        <m.span
           key={i}
           className="absolute h-2.5 w-2.5 rounded-full bg-blue"
           style={{ top: dot.top, left: dot.left }}

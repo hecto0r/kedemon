@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, m } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import Logo from './Logo'
 
@@ -27,7 +27,7 @@ export default function Navbar() {
   }
 
   return (
-    <motion.header
+    <m.header
       initial={{ opacity: 0, y: -24, filter: 'blur(8px)' }}
       animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -91,7 +91,7 @@ export default function Navbar() {
 
       <AnimatePresence>
         {menuOpen && (
-          <motion.nav
+          <m.nav
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
@@ -117,9 +117,9 @@ export default function Navbar() {
                 Plan Fundadores
               </a>
             </div>
-          </motion.nav>
+          </m.nav>
         )}
       </AnimatePresence>
-    </motion.header>
+    </m.header>
   )
 }

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { ShieldCheck } from 'lucide-react'
 import Reveal from './Reveal'
 import { useInView } from '../hooks/useInView'
@@ -22,7 +22,7 @@ function CheckItem({ text, delay }) {
     <li ref={ref} className="flex items-start gap-4">
       <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent/15">
         <svg viewBox="0 0 24 24" className="h-4 w-4">
-          <motion.path
+          <m.path
             d="M4 12.5l5 5L20 6"
             fill="none"
             stroke="#4a9eff"

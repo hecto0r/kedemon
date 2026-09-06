@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { Camera, BrainCircuit, BellRing, Zap } from 'lucide-react'
 import Reveal from './Reveal'
 import { useInView } from '../hooks/useInView'
@@ -41,7 +41,7 @@ export default function HowItWorks() {
 
         <div ref={lineRef} className="relative mt-20">
           <div className="pointer-events-none absolute left-[16.6%] right-[16.6%] top-10 hidden h-0.5 md:block">
-            <motion.div
+            <m.div
               initial={{ scaleX: 0 }}
               animate={lineInView ? { scaleX: 1 } : {}}
               transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
@@ -53,7 +53,7 @@ export default function HowItWorks() {
           <div className="relative grid grid-cols-1 gap-14 md:grid-cols-3 md:gap-8">
             {STEPS.map((step, i) => (
               <Reveal key={step.title} delay={i * 0.15} className="flex flex-col items-center text-center">
-                <motion.div
+                <m.div
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.7, ease: [0.65, 0, 0.35, 1] }}
                   className="relative z-10 flex h-20 w-20 items-center justify-center rounded-full bg-navy shadow-[0_10px_30px_rgba(13,42,92,0.25)]"
@@ -62,7 +62,7 @@ export default function HowItWorks() {
                   <span className="absolute -right-1 -top-1 flex h-7 w-7 items-center justify-center rounded-full bg-accent text-xs font-bold text-white">
                     {i + 1}
                   </span>
-                </motion.div>
+                </m.div>
                 <h3 className="mt-6 text-lg font-bold text-navy">{step.title}</h3>
                 <p className="mt-2 max-w-xs text-[0.95rem] leading-relaxed text-navy/70">
                   {step.description}
