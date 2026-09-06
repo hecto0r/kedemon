@@ -6,6 +6,7 @@ import StatsBar from './components/StatsBar'
 import HowItWorks from './components/HowItWorks'
 import ForWhom from './components/ForWhom'
 import Privacy from './components/Privacy'
+import ProsAndCons from './components/ProsAndCons'
 import PilotForm from './components/PilotForm'
 import Footer from './components/Footer'
 
@@ -27,6 +28,7 @@ export default function App() {
           <HowItWorks />
           <ForWhom />
           <Privacy />
+          <ProsAndCons />
           <PilotForm />
         </main>
         <Footer />
