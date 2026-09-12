@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hecto0r.github.io/kedemon/sitemap.xml
+Sitemap: https://kedemonhealth.com/sitemap.xml

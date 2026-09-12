@@ -29,9 +29,22 @@
       a { color: var(--blue); }
       a.back {
         display: inline-block;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
         font-weight: 600;
         text-decoration: none;
+      }
+      .legal-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 16px;
+        margin-bottom: 32px;
+        font-size: 0.85rem;
+      }
+      .legal-nav a { text-decoration: none; }
+      .legal-nav a[aria-current] {
+        color: var(--navy);
+        font-weight: 700;
+        pointer-events: none;
       }
       h1 {
         font-size: 2rem;
@@ -67,6 +80,11 @@
   <body>
     <div class="wrap">
       <a class="back" href="./#contacto">&larr; Volver a KEDEMON HEALTH</a>
+      <nav class="legal-nav">
+        <a href="./privacidad.html" aria-current="page">Política de Privacidad</a>
+        <a href="./cookies.html">Política de Cookies</a>
+        <a href="./aviso-legal.html">Aviso Legal</a>
+      </nav>
       <div class="box">
         <h1>Política de Privacidad</h1>
         <p class="updated">Última actualización: agosto de 2026</p>
@@ -74,7 +92,7 @@
         <p>
           Esta política explica cómo KEDEMON HEALTH trata los datos personales que
           nos facilitas a través del formulario del Plan Fundadores en
-          kedemon.com.
+          kedemonhealth.com.
         </p>
 
         <h2>Responsable del tratamiento</h2>

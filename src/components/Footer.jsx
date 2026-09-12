@@ -10,6 +10,17 @@ export default function Footer() {
           caídas por IA, sin cámaras que graben.
         </p>
         <div className="mt-4 h-px w-full max-w-xs bg-white/10" />
+        <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-white/60">
+          <a href="./privacidad.html" className="hover:text-white">
+            Política de Privacidad
+          </a>
+          <a href="./cookies.html" className="hover:text-white">
+            Política de Cookies
+          </a>
+          <a href="./aviso-legal.html" className="hover:text-white">
+            Aviso Legal
+          </a>
+        </nav>
         <p className="text-sm text-white/60">
           © {new Date().getFullYear()} KEDEMON HEALTH. Todos los derechos reservados.
         </p>
